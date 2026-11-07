@@ -68,8 +68,8 @@
     "duo_wins": 19,
     "squad_wins": 8,
     "battle_pass_level": 23,
-    "br_rank": "Unranked",
-    "reload_rank": "Unranked"
+    "br_rank": "BRONZE I (0%)",
+    "reload_rank": "BRONZE I (0%)"
   },
   "player_2_fn": {
     "wins": 511,
@@ -80,8 +80,8 @@
     "duo_wins": 154,
     "squad_wins": 170,
     "battle_pass_level": 7,
-    "br_rank": "Unranked",
-    "reload_rank": "Unranked"
+    "br_rank": "BRONZE I (0%)",
+    "reload_rank": "BRONZE III (71%)"
   },
   "player_3_fn": {
     "wins": 289,
@@ -92,7 +92,7 @@
     "duo_wins": 42,
     "squad_wins": 39,
     "battle_pass_level": 30,
-    "br_rank": "Unranked",
-    "reload_rank": "Unranked"
+    "br_rank": "BRONZE I (0%)",
+    "reload_rank": "SILVER II (0%)"
   }
 }
