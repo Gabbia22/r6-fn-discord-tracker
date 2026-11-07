@@ -80,13 +80,13 @@
     "duo_wins": 154,
     "squad_wins": 170,
     "battle_pass_level": 7,
-    "br_rank": "BRONZE I (0%)",
-    "reload_rank": "BRONZE III (71%)"
+    "br_rank": "Unranked",
+    "reload_rank": "Unranked"
   },
   "player_3_fn": {
     "wins": 289,
-    "kills": 13409,
-    "matches": 5369,
+    "kills": 13413,
+    "matches": 5370,
     "kd": 2.64,
     "solo_wins": 11,
     "duo_wins": 42,
