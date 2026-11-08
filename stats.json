@@ -72,26 +72,26 @@
     "reload_rank": "BRONZE I (0%)"
   },
   "player_2_fn": {
-    "wins": 511,
-    "kills": 23993,
-    "matches": 14127,
+    "wins": 512,
+    "kills": 23995,
+    "matches": 14128,
     "kd": 1.76,
     "solo_wins": 50,
     "duo_wins": 154,
     "squad_wins": 170,
-    "battle_pass_level": 7,
+    "battle_pass_level": 14,
     "br_rank": "BRONZE I (0%)",
     "reload_rank": "BRONZE III (71%)"
   },
   "player_3_fn": {
-    "wins": 289,
-    "kills": 13432,
-    "matches": 5380,
+    "wins": 290,
+    "kills": 13439,
+    "matches": 5381,
     "kd": 2.64,
     "solo_wins": 11,
     "duo_wins": 42,
     "squad_wins": 39,
-    "battle_pass_level": 30,
+    "battle_pass_level": 37,
     "br_rank": "BRONZE I (0%)",
     "reload_rank": "SILVER II (0%)"
   }
