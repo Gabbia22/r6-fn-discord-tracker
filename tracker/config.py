@@ -50,7 +50,7 @@ class Settings:
 def load_settings() -> Settings:
     r6_players = []
     fn_players = []
-    for index in (1):
+    for index in (1, 2):
         r6_players.append(
             R6Player(
                 key=f"player_{index}_r6",
