@@ -39,7 +39,7 @@ class FNPlayer:
 @dataclass(frozen=True)
 class Settings:
     webhook_url: str
-    fortnite_api_key: str
+    fortnite_api_key: str | None
     ubisoft_email: str | None
     ubisoft_password: str | None
     arenyze_api_key: str | None
@@ -50,7 +50,7 @@ class Settings:
 def load_settings() -> Settings:
     r6_players = []
     fn_players = []
-    for index in (1, 2, 3):
+    for index in (1):
         r6_players.append(
             R6Player(
                 key=f"player_{index}_r6",
@@ -58,16 +58,6 @@ def load_settings() -> Settings:
                 platform=_optional(f"R6_PLAYER_{index}_PLATFORM", "pc").lower(),
             )
         )
-        fallback = os.environ.get(f"FN_PLAYER_{index}_NAME_FALLBACK", "").strip() or None
-        fn_players.append(
-            FNPlayer(
-                key=f"player_{index}_fn",
-                username=_require(f"FN_PLAYER_{index}_NAME"),
-                account_type=_optional(f"FN_PLAYER_{index}_ACCOUNT_TYPE", "epic").lower(),
-                fallback_username=fallback,
-            )
-        )
-
     arenyze = os.environ.get("ARENYZE_API_KEY", "").strip() or None
     ubisoft_email = os.environ.get("UBISOFT_EMAIL", "").strip() or None
     ubisoft_password = os.environ.get("UBISOFT_PASSWORD", "").strip() or None
@@ -77,7 +67,7 @@ def load_settings() -> Settings:
         )
     return Settings(
         webhook_url=_require("DISCORD_WEBHOOK_URL"),
-        fortnite_api_key=_require("FORTNITE_API_KEY"),
+        fortnite_api_key=None,
         ubisoft_email=ubisoft_email,
         ubisoft_password=ubisoft_password,
         arenyze_api_key=arenyze,
