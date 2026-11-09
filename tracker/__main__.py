@@ -5,14 +5,14 @@ import asyncio
 import sys
 from pathlib import Path
 
-import fortnite_api
+
 from siegeapi import Auth
 
 from tracker.arenyze import fetch_r6_player_arenyze
 from tracker.compare import diff_stats, is_uninitialized
 from tracker.config import load_settings
 from tracker.discord_webhook import build_embed, refresh_game_embeds, send_embed
-from tracker.fortnite import fetch_fn_player
+
 from tracker.r6 import PLAYER_GAP_SECONDS, connect_with_backoff, fetch_r6_player
 from tracker.schema import empty_snapshot, labels_for
 from tracker.store import load_message_ids, load_snapshot, write_message_ids, write_snapshot
@@ -132,19 +132,7 @@ async def run(*, preview_once: bool = False, preview_only: str = "both") -> int:
     finally:
         if auth is not None:
             await auth.close()
-
-    async with fortnite_api.Client(api_key=settings.fortnite_api_key) as fn_client:
-        for player in settings.fn_players:
-            try:
-                stats, resolved_name = await fetch_fn_player(fn_client, player)
-                snapshot[player.key] = stats
-                display_names[player.key] = resolved_name
-                fn_ok.append(player.key)
-                print(f"Fetched {player.key}.")
-            except Exception as exc:
-                failures.append(_safe_failure(player.key, exc))
-                print(f"::warning::{failures[-1]}")
-
+            
     previous = load_snapshot(STATS_PATH)
     notified = 0
 
