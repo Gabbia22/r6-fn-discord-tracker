@@ -1,10 +1,10 @@
 {
   "player_1_r6": {
-    "ranked_kills": 798,
-    "ranked_deaths": 722,
-    "ranked_wins": 79,
-    "ranked_kd": 1.11,
-    "rank_points": 3718,
+    "ranked_kills": 814,
+    "ranked_deaths": 743,
+    "ranked_wins": 82,
+    "ranked_kd": 1.1,
+    "rank_points": 3774,
     "ranked_rank": "Emerald 3",
     "casual_kills": 11,
     "casual_deaths": 11,
@@ -12,12 +12,12 @@
     "casual_kd": 1.0,
     "casual_mmr": 0,
     "casual_rank": "Unranked",
-    "overall_kills": 954,
-    "overall_deaths": 840,
-    "overall_wins": 80,
-    "overall_kd": 1.14,
-    "level": 360,
-    "time_played_hours": 2336
+    "overall_kills": 970,
+    "overall_deaths": 861,
+    "overall_wins": 83,
+    "overall_kd": 1.13,
+    "level": 361,
+    "time_played_hours": 2348
   },
   "player_2_r6": {
     "ranked_kills": 655,
